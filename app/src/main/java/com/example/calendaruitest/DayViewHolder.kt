@@ -1,14 +1,14 @@
 package com.example.calendaruitest
 
-import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.calendaruitest.databinding.DayLayoutBinding
 
-class DayViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+class DayViewHolder(itemView: DayLayoutBinding) : RecyclerView.ViewHolder(itemView.root) {
     val dayOfMonth: TextView
 
     init {
-        dayOfMonth = itemView.findViewById(R.id.cellDayText)
+        dayOfMonth = itemView.cellDayText
     }
 
 }

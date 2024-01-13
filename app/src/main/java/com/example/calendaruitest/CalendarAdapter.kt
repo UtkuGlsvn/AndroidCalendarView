@@ -23,7 +23,7 @@ class CalendarAdapter(
 
         val layoutParams = view.layoutParams
         layoutParams.height = (parent.height * 0.166666666).toInt()
-        return CalendarViewHolder(view, onItemListener)
+        return CalendarViewHolder(binding, onItemListener)
     }
 
     override fun onBindViewHolder(holder: CalendarViewHolder, position: Int) {
