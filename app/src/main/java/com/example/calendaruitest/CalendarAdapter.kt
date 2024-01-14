@@ -22,7 +22,7 @@ class CalendarAdapter(
         val view: View = binding.root
 
         val layoutParams = view.layoutParams
-        layoutParams.height = (parent.height * 0.166666666).toInt()
+        layoutParams.height = (parent.height * 0.1111).toInt()
         return CalendarViewHolder(binding, onItemListener)
     }
 

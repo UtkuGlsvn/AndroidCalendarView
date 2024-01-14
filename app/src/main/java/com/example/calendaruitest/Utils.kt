@@ -43,9 +43,6 @@ fun daysInMonthArray(date: LocalDate): MutableList<String> {
         daysInMonthArray.add(day.toString())
     }
 
-    while (daysInMonthArray.size < 42) {
-        daysInMonthArray.add("")
-    }
 
     return daysInMonthArray
 }
